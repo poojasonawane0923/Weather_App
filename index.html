@@ -10,20 +10,50 @@
 <body>
 	<div class="mdiv">
 		<div class="container">
-			<h3>WEATHER FORECAST</h3>
+			<h3 class="heading">WEATHER FORECAST</h3>
 			<form>
-				<input type="text" name=" city" id="city_name" placeholder="Enter a city">
-				<button type="button" onclick="fetchcity()">
-					<img src="https://icon-library.com/images/search-engine-icon/search-engine-icon-24.jpg" alt="search" height="20px">
+				<div class=" component">
+					<div>
+				<input type="text" name="city" id="cityName" placeholder="Enter a city" autofocus>
+			</div>
+			<div class="btn">
+				<button type="button" class="srch_btn" onclick="fetchCity()">
+					<img src="https://icon-library.com/images/search-engine-icon/search-engine-icon-24.jpg" alt="search icon" height="20px">
 					
 				</button>
-
-			</form>
-
+          </div>
+			
 		</div>
-		
+		<br>
+		<div align="center" style="margin-top: -30px;">
+			<img src="https://cdn3.iconfinder.com/data/icons/sunnyday-2/142/medium_Clear-1024.png" alt="weather icon" height="150px">
+			
+		</div>
+		<div align="center" style=" margin-top: -20px;">
+			<span id="city">CITY NAME</span>
+			<br>
+			<span class="measurement" id="temp">0°C</span>
+			 
+		</div>
+		<div align="center" style="margin-top:20px;">
+			<table width="100%" cellpadding="10px">
+				<tr align="center">
+					<td>
+						<h5 class="headings"> WIND SPEED</h5>
+						<span class="measurement" id="wind_speed">0 km/hr</span>
+					</td>
+					<td>
+						<h4 class="headings">HUMIDITY</h4>
+						<span  class="measurement" id="humidity">0 g/kg</span>
+					</td>
+				</tr>
+				
+			</table>
+			
+		</div>
+		</form>
 
 	</div>
-
+          </div>
 </body>
 </html>
